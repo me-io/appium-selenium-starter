@@ -1,0 +1,19 @@
+{
+  "name": "me-io/appium-codeception-starter",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "me-io/selenium-appium-server": "~1",
+    "me-io/appium-codeception": "~1"
+  },
+  "scripts": {
+    "download-selenium": "",
+    "download-appium": "",
+    "start-appium": "./vendor/bin/appium-run.bash",
+    "start-selenium": "",
+    "restart-selenium": "",
+    "restart-appium": "",
+    "stop-selenium": "",
+    "stop-appium": ""
+  }
+}
