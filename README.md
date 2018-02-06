@@ -30,7 +30,7 @@ Alternatively, you may also install `appium-codeception-starter` by issuing the 
 terminal:
 
 ```bash
-composer create-project --prefer-dist laravel/laravel blog
+composer create-project --prefer-dist me-io/appium-codeception-starter
 ```
 
 ### Running Example Tests
