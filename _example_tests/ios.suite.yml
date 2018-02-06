@@ -1,0 +1,33 @@
+class_name: IosGuy
+modules:
+  enabled:
+    - \Helper\Ios
+    - \Appium\AppiumDriver
+  config:
+    \Appium\AppiumDriver:
+      host: 0.0.0.0
+      port: 4723
+      dummyRemote: false
+      ## before suite / ios / android
+      resetAfterSuite: true
+      ## before scenarios
+      resetAfterCest: false
+      ## before every test
+      resetAfterTest: false
+      ## before every step
+      resetAfterStep: false
+#      capabilities:
+#        app               : '/Users/arifmasood/Desktop/Automation/mobile/ipa/almosafer-31may2017-rd.ipa'
+#        # xcideOrgId is Apple developer team identifier string.
+#        xcodeOrgId        : 'EZS9FLT95P'
+#        # xcodeSigningId is a string representing a signing certificate. iPhone Developer by default.
+#        xcodeSigningId    : 'iPhone Developer'
+#        platformName      : 'iOS'
+#        platformVersion   : '10.2.1'
+#        deviceName        : 'iPhone7tajawal'
+#        udid              : 'a6eab5da6be5386151c8ba0f7162befcee6d3119'
+#        useNewWDA         : true
+#        newCommandTimeout : 7200
+#        autoAcceptAlerts  : true
+#        # when fullReset is true, it uninstalls - > re-install the app
+#        fullReset         : true
