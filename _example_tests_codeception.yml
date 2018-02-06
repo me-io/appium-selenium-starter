@@ -1,0 +1,10 @@
+paths:
+    tests: _example_tests
+    output: _example_tests/_output
+    data: _example_tests/_data
+    support: _example_tests/_support
+    envs: _example_tests/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed

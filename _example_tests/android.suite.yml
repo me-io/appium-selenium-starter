@@ -1,0 +1,40 @@
+class_name: AndroidGuy
+modules:
+  enabled:
+    - \Helper\Android
+    - \Appium\AppiumDriver
+
+  config:
+    \Appium\AppiumDriver:
+      host: 0.0.0.0
+      port: 4723
+      dummyRemote: false
+      ## before suite / Android / android
+      resetAfterSuite: true
+      ## before scenarAndroid
+      resetAfterCest: false
+      ## before every test
+      resetAfterTest: false
+      ## before every step
+      resetAfterStep: false
+#      capabilities:
+#                platformName    : 'Android'
+#                deviceName      : 'Android device'
+#                automationName  : 'Appium'
+#                appPackage      : com.travel.almosafer.debug
+#                fullReset       : false
+#                noReset         : false
+#                newCommandTimeout: 7200
+#                nativeInstrumentsLib: true
+#                connection_timeout: 500
+#                request_timeout: 500
+#                autoAcceptAlerts: true
+#                appActivity: com.tajawal.splash.SplashActivity
+#                skipUnlock: true
+                #sessionOverride : true
+                #orientation: PORTRAIT
+                #browserName: Safari
+                #language: ar
+                #locale: ar-sa
+                #udid: 123456
+                #autoWebview: false
