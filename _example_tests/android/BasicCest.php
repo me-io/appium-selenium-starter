@@ -44,4 +44,24 @@ class BasicCest
         $elm->value('Test value');
         $I->assertEquals('Test value', $elm->text());
     }
+
+    public function applicationWillCloseOnChoosingTheIAgreeENButtonTouch(AndroidGuy $I)
+    {
+        $elm = $I->byId('io.selendroid.testapp:id/buttonTest');
+        $elm->click();
+        $promptBox = $I->byId('android:id/message')->getText();
+        $I->assertEquals('This will end the activity', $promptBox);
+        $I->byId('android:id/button1')->click();
+        $I->assertEquals('.Launcher', $I->getCurrentActivity());
+    }
+
+    public function applicationWillNotCloseOnChoosingTheNonoAfterENButtonTouch(AndroidGuy $I)
+    {
+        $elm = $I->byId('io.selendroid.testapp:id/buttonTest');
+        $elm->click();
+        $promptBox = $I->byId('android:id/message')->getText();
+        $I->assertEquals('This will end the activity', $promptBox);
+        $I->byId('android:id/button2')->click();
+        $I->assertEquals('.HomeScreenActivity', $I->getCurrentActivity());
+    }
 }
