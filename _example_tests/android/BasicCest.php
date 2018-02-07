@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class BasicCest
+ * @group basic-cest
+ */
 class BasicCest
 {
     public function applicationWorks(AndroidGuy $I)
@@ -18,9 +22,26 @@ class BasicCest
 
     public function throwUnhandledExceptionThrowsException(AndroidGuy $I)
     {
-        $I->byId('io.selendroid.testapp:id/exceptionTestButton')->click();
+        $elm = $I->byId('io.selendroid.testapp:id/exceptionTestButton');
+        $elm->click();
         $I->implicitWait(['ms' => 600]);
         $exceptionMessageText = $I->byId('android:id/message')->getText();
         $I->assertEquals('Unfortunately, selendroid-test-app has stopped.', $exceptionMessageText);
+    }
+
+    public function userCanEditMyTextField(AndroidGuy $I)
+    {
+        $elm = $I->byId('io.selendroid.testapp:id/my_text_field');
+        $elm->click();
+        $elm->value('Test value');
+        $I->assertEquals('Test value', $elm->text());
+    }
+
+    public function displayTextViewShowTextOnTouch(AndroidGuy $I)
+    {
+        $elm = $I->byId('io.selendroid.testapp:id/my_text_field');
+        $elm->click();
+        $elm->value('Test value');
+        $I->assertEquals('Test value', $elm->text());
     }
 }
