@@ -1,8 +1,9 @@
 class_name: AndroidGuy
 modules:
   enabled:
-    - \Helper\Android
+    - \Helper\AndroidHelper
     - \Appium\AppiumDriver
+    - Asserts
 
   config:
     \Appium\AppiumDriver:
@@ -14,27 +15,20 @@ modules:
       ## before scenarAndroid
       resetAfterCest: false
       ## before every test
-      resetAfterTest: false
+      resetAfterTest: true
       ## before every step
       resetAfterStep: false
-#      capabilities:
-#                platformName    : 'Android'
-#                deviceName      : 'Android device'
-#                automationName  : 'Appium'
-#                appPackage      : com.travel.almosafer.debug
-#                fullReset       : false
-#                noReset         : false
-#                newCommandTimeout: 7200
-#                nativeInstrumentsLib: true
-#                connection_timeout: 500
-#                request_timeout: 500
-#                autoAcceptAlerts: true
-#                appActivity: com.tajawal.splash.SplashActivity
-#                skipUnlock: true
-                #sessionOverride : true
-                #orientation: PORTRAIT
-                #browserName: Safari
-                #language: ar
-                #locale: ar-sa
-                #udid: 123456
-                #autoWebview: false
+      capabilities:
+                platformName    : 'Android'
+                deviceName      : 'Nexus'
+                automationName  : 'Appium'
+                appPackage      : io.selendroid.testapp
+                fullReset       : false
+                noReset         : false
+                newCommandTimeout: 7200
+                nativeInstrumentsLib: true
+                connection_timeout: 500
+                request_timeout: 500
+                autoAcceptAlerts: true
+                appActivity: io.selendroid.testapp.HomeScreenActivity
+                skipUnlock: true
