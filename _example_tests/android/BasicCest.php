@@ -78,8 +78,24 @@ class BasicCest
     {
         $registerUserBtn = $I->byId('io.selendroid.testapp:id/startUserRegistration');
         $registerUserBtn->click();
-        $I->implicitWait(['ms' => 400]);
         $registerUserHeaderText = $I->byXPath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]')->getText();
         $I->assertEquals('Welcome to register a new User', $registerUserHeaderText);
+    }
+
+    public function userCanRegisterHimselfUsingStartUserRegistrationButton(AndroidGuy $I)
+    {
+        $registerUserBtn = $I->byId('io.selendroid.testapp:id/startUserRegistration');
+        $registerUserBtn->click();
+        $registerUserHeaderText = $I->byXPath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]')->getText();
+        $I->assertEquals('Welcome to register a new User', $registerUserHeaderText);
+
+        $I->byId('io.selendroid.testapp:id/inputUsername')->value('exampleuser');
+        $I->byId('io.selendroid.testapp:id/inputEmail')->value('example@example.com');
+        $I->byId('io.selendroid.testapp:id/inputPassword')->value('exampleuser');
+        $I->byId('io.selendroid.testapp:id/input_adds')->click();
+        $I->byId('io.selendroid.testapp:id/btnRegisterUser')->click();
+
+        $userRegisteredHeader = $I->byXPath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.TableLayout[1]/android.widget.TableRow[1]/android.widget.TextView[1]')->getText();
+        $I->assertEquals('Verify user', $userRegisteredHeader);
     }
 }
