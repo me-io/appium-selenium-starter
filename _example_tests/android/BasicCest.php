@@ -73,4 +73,13 @@ class BasicCest
         $webviewHeaderText = $I->byXPath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.TableLayout[1]/android.widget.TableRow[1]/android.widget.TextView[1]')->getText();
         $I->assertEquals('Web View Interaction', $webviewHeaderText);
     }
+
+    public function startUserRegistrationButtonRedirectAUserToRegisterAUserView(AndroidGuy $I)
+    {
+        $registerUserBtn = $I->byId('io.selendroid.testapp:id/startUserRegistration');
+        $registerUserBtn->click();
+        $I->implicitWait(['ms' => 400]);
+        $registerUserHeaderText = $I->byXPath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]')->getText();
+        $I->assertEquals('Welcome to register a new User', $registerUserHeaderText);
+    }
 }
