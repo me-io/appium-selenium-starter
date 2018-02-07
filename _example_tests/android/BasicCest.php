@@ -64,4 +64,13 @@ class BasicCest
         $I->byId('android:id/button2')->click();
         $I->assertEquals('.HomeScreenActivity', $I->getCurrentActivity());
     }
+
+    public function buttonStartWebviewOpensTheWebViewInteractions(AndroidGuy $I)
+    {
+        $elm = $I->byId('io.selendroid.testapp:id/buttonStartWebview');
+        $elm->click();
+        $I->implicitWait(['ms' => 400]);
+        $webviewHeaderText = $I->byXPath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.TableLayout[1]/android.widget.TableRow[1]/android.widget.TextView[1]')->getText();
+        $I->assertEquals('Web View Interaction', $webviewHeaderText);
+    }
 }
