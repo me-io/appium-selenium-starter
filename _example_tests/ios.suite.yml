@@ -3,6 +3,8 @@ modules:
   enabled:
     - \Helper\Ios
     - \Appium\AppiumDriver
+    - Asserts
+
   config:
     \Appium\AppiumDriver:
       host: 0.0.0.0
@@ -13,21 +15,21 @@ modules:
       ## before scenarios
       resetAfterCest: false
       ## before every test
-      resetAfterTest: false
+      resetAfterTest: true
       ## before every step
       resetAfterStep: false
-#      capabilities:
-#        app               : '/Users/arifmasood/Desktop/Automation/mobile/ipa/almosafer-31may2017-rd.ipa'
-#        # xcideOrgId is Apple developer team identifier string.
-#        xcodeOrgId        : 'EZS9FLT95P'
-#        # xcodeSigningId is a string representing a signing certificate. iPhone Developer by default.
-#        xcodeSigningId    : 'iPhone Developer'
-#        platformName      : 'iOS'
-#        platformVersion   : '10.2.1'
-#        deviceName        : 'iPhone7tajawal'
-#        udid              : 'a6eab5da6be5386151c8ba0f7162befcee6d3119'
-#        useNewWDA         : true
-#        newCommandTimeout : 7200
-#        autoAcceptAlerts  : true
-#        # when fullReset is true, it uninstalls - > re-install the app
-#        fullReset         : true
+      capabilities:
+        app               : '/Users/zeeshan/Downloads/python-client-test-apps/UICatalog.app.zip'
+        # xcideOrgId is Apple developer team identifier string.
+        xcodeOrgId        : '17B7A634-8A38-4727-A040-0280348E16F7'
+        # xcodeSigningId is a string representing a signing certificate. iPhone Developer by default.
+        xcodeSigningId    : 'iPhone Developer'
+        platformName      : 'iOS'
+        platformVersion   : '11.2'
+        deviceName        : 'iPhone8'
+        udid              : '17B7A634-8A38-4727-A040-0280348E16F7'
+        useNewWDA         : false
+        newCommandTimeout : 7200
+        autoAcceptAlerts  : true
+        # when fullReset is true, it uninstalls - > re-install the app
+        fullReset         : false
