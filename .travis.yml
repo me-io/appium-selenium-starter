@@ -1,0 +1,28 @@
+language: php
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 7.1
+
+sudo: false
+
+cache:
+    apt: true
+    directories:
+        - $HOME/.composer/cache
+
+addons:
+  sauce_connect:
+    username: "zeeshanu"
+
+env:
+  global:
+    secure: i5fPngo3lyA8KBzfG2SsH7n2/C3UvwNEvup//Nl+dw7tX2xPAzSXaPIDTL4BBTfXrTPAadYkuap/n4qptLPiv82+KOEGL77ZbKi6NGcsLH4Trj/rJw+xVho9C5VZWzMIiw9hnKO21B2jWOZmim7HICqKiMIRv3+dIVsMraEvVlY+G8OOmfcCHW/b0gYibwSvPmkOdgfIznPkLzmjcfp5lc30AB80nKvHf4opGylKtWFx2t89WJpUBMW33RYqfD50Ntc9im+5nVPA0az81VFy8m6tV/Svo9HH3rNuhOJq0x1WzPBJd/qxQjOU8Pdt4als/51vL1ZyifTK0MzK65ozIYMBgzVnJ2rf3TIXM/odVfy2egFrIRLB2G5wk+ypnjf/7xHhTFG9rI3XY7I255m6ZRUjsJ4fe2aqdAhAOUuGHg0pwe9pwqS/MV21JrddpL7hrw2+fXGxSNUuKXOq+dRnod2xYQWKZ3+ptxa2WBmVZ0iskRta3B6oVmi1SqL4mw7ZCLOOBoy3IwYeTGuScKNV79iXYPjlffwJgt70zqZvH7QkGMuHItK1L51i2uNsVEYG1H+F0w9thqq5RGpQgAHd9bPFwSGdCOAvYGxTHXdMbnWUsSfF5Z1VJ4kL9DaxUqCuAN+6QvCqTi1hmuvC6j5FIGFtQTbNVLGN5w8CaIA4wBY=
+
+before_script:
+    - composer --prefer-dist install --no-interaction -o --no-progress
+
+script:
+    - php ./vendor/bin/codecept -c _example_tests_codeception.yml run ios
+    - php ./vendor/bin/codecept -c _example_tests_codeception.yml run android
