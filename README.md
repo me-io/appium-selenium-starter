@@ -4,6 +4,7 @@
   <p align="center">
     <a href="LICENSE.md">
     <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
     </a>
   </p>
 </p>
