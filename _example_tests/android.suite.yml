@@ -7,7 +7,7 @@ modules:
 
   config:
     \Appium\AppiumDriver:
-      host: 'https://eu1.appium.testobject.com/wd/hub'
+      host: 'eu1.appium.testobject.com/wd/hub'
       port: 4723
       dummyRemote: false
       ## before suite / Android / android
