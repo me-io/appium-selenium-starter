@@ -1,0 +1,35 @@
+class_name: IosGuy
+modules:
+  enabled:
+    - \Helper\Ios
+    - \Appium\AppiumDriver
+    - Asserts
+
+  config:
+    \Appium\AppiumDriver:
+      host: 0.0.0.0
+      port: 4723
+      dummyRemote: false
+      ## before suite / ios / android
+      resetAfterSuite: true
+      ## before scenarios
+      resetAfterCest: false
+      ## before every test
+      resetAfterTest: true
+      ## before every step
+      resetAfterStep: false
+      capabilities:
+        app               : '/Users/zeeshan/Downloads/python-client-test-apps/UICatalog.app.zip'
+        # xcideOrgId is Apple developer team identifier string.
+        xcodeOrgId        : '17B7A634-8A38-4727-A040-0280348E16F7'
+        # xcodeSigningId is a string representing a signing certificate. iPhone Developer by default.
+        xcodeSigningId    : 'iPhone Developer'
+        platformName      : 'iOS'
+        platformVersion   : '11.2'
+        deviceName        : 'iPhone8'
+        udid              : '17B7A634-8A38-4727-A040-0280348E16F7'
+        useNewWDA         : false
+        newCommandTimeout : 7200
+        autoAcceptAlerts  : true
+        # when fullReset is true, it uninstalls - > re-install the app
+        fullReset         : false
