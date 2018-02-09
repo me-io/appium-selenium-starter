@@ -100,6 +100,12 @@ To run the ios tests run the following codecept command inside your terminal:
 
 ![iOS](https://i.imgur.com/Au45fXv.gif)
 
+## Contributors
+
+A huge thanks to all of our contributors:
+
+| [<img src="https://avatars0.githubusercontent.com/u/45731?v=3" width="100px;"/><br /><sub><b>Mohamed Meabed</b></sub>](https://github.com/Meabed)<br />[💬](#question-meabed "Answering Questions") [📖](#documentation-meabed "Documentation") [👀](#review-meabed "Reviewed Pull Requests") [📢](#talk-meabed "Talks") | [<img src="https://avatars2.githubusercontent.com/u/16267321?" width="100px;"/><br /><sub><b>Zeeshan Ahmad</b></sub>](https://github.com/zeeshanu)<br />[💻](#code-zeeshan "Code") [📖](#documentation-zeeshan "Documentation") |
+|:---: | :---: |
 ## License
 
 The code is available under the [MIT license](LICENSE.md).
