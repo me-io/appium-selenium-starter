@@ -1,19 +1,28 @@
 {
   "name": "me-io/appium-codeception-starter",
-  "minimum-stability": "dev",
-  "prefer-stable": true,
+  "description": "Simple and easy to use boilerplate for writing tests for mobile or web.",
+  "keywords": [
+    "test",
+    "testing",
+    "unit",
+    "unit-testing",
+    "appium",
+    "selenium",
+    "mobile-testing",
+    "android-testing",
+    "ios-testing",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "type": "project",
   "require": {
     "me-io/selenium-appium-server": "~1",
     "me-io/appium-codeception": "^1.0"
   },
   "scripts": {
-    "download-selenium": "",
-    "download-appium": "",
-    "start-appium": "./vendor/bin/appium-run.bash",
-    "start-selenium": "",
-    "restart-selenium": "",
-    "restart-appium": "",
-    "stop-selenium": "",
-    "stop-appium": ""
-  }
+    "appium": "./vendor/bin/appium.sh",
+    "selenium": "./vendor/bin/selenium.sh"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
