@@ -24,7 +24,7 @@ modules:
         platformVersion: '7'
         deviceName: 'LG Nexus 5X'
         phoneOnly: false
-        tabletOnly: 'false
+        tabletOnly: false
         privateDevicesOnly: false
         appPackage: io.selendroid.testapp
         fullReset: false
