@@ -7,8 +7,8 @@ modules:
 
   config:
     \Appium\AppiumDriver:
-      host: 'https://eu1.appium.testobject.com/wd/hub'
-      port: 4723
+      host: 'eu1.appium.testobject.com'
+      port: 80
       dummyRemote: false
       ## before suite / Android / android
       resetAfterSuite: true
@@ -19,14 +19,13 @@ modules:
       ## before every step
       resetAfterStep: false
       capabilities:
-        automationName: 'Appium'
+        testobject_api_key: '4A6891ACD38E4BF5905956B6506FB21C'
         platformName: 'Android'
-        platformVersion: '7'
-        deviceName: 'LG Nexus 5X'
+        platformVersion: '8.1'
+        deviceName: 'LG Nexus 5X Free'
         phoneOnly: false
-        tabletOnly: 'false
+        tabletOnly: false
         privateDevicesOnly: false
-        appPackage: io.selendroid.testapp
         fullReset: false
         noReset: false
         newCommandTimeout: 7200
@@ -34,5 +33,7 @@ modules:
         connection_timeout: 500
         request_timeout: 500
         autoAcceptAlerts: true
-        appActivity: io.selendroid.testapp.HomeScreenActivity
         skipUnlock: true
+
+#        appPackage: io.selendroid.testapp
+#        appActivity: io.selendroid.testapp.HomeScreenActivity
