@@ -9,7 +9,7 @@
 [![downloads][downloads-badge]](downloads)
 [![MIT License][license-badge]](license)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]](prs) 
 [![Code of Conduct][coc-badge]](coc)
 [![Watch on GitHub][github-watch-badge]](github-watch)
@@ -112,8 +112,12 @@ To run the ios tests run the following codecept command inside your terminal:
 
 A huge thanks to all of our contributors:
 
-| [<img src="https://avatars0.githubusercontent.com/u/45731?v=3" width="100px;"/><br /><sub><b>Mohamed Meabed</b></sub>](https://github.com/Meabed)<br />[💬](#question-meabed "Answering Questions") [📖](#documentation-meabed "Documentation") [👀](#review-meabed "Reviewed Pull Requests") [📢](#talk-meabed "Talks") | [<img src="https://avatars2.githubusercontent.com/u/16267321?" width="100px;"/><br /><sub><b>Zeeshan Ahmad</b></sub>](https://github.com/zeeshanu)<br />[💻](#code-zeeshan "Code") [📖](#documentation-zeeshan "Documentation") |
-|:---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars0.githubusercontent.com/u/45731?v=3" width="100px;"/><br /><sub><b>Mohamed Meabed</b></sub>](https://github.com/Meabed)<br />[💻](https://github.com/me-io/appium-selenium-starter/commits?author=Meabed "Code") [📢](#talk-Meabed "Talks") | [<img src="https://avatars2.githubusercontent.com/u/16267321?v=3" width="100px;"/><br /><sub><b>Zeeshan Ahmad</b></sub>](https://github.com/zeeshanu)<br />[💻](https://github.com/me-io/appium-selenium-starter/commits?author=zeeshanu "Code") [🐛](https://github.com/me-io/appium-selenium-starter/issues?q=author%3Azeeshanu "Bug reports") [⚠️](https://github.com/me-io/appium-selenium-starter/commits?author=zeeshanu "Tests") [📖](https://github.com/me-io/appium-selenium-starter/commits?author=zeeshanu "Documentation") |
+| :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 ## License
 
 The code is available under the [MIT license](LICENSE.md).

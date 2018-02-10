@@ -1,0 +1,21 @@
+{
+  "name": "appium-selenium-starter",
+  "version": "1.0.0",
+  "description": "Simple and easy to use boilerplate for writing tests for mobile or web.",
+  "scripts": {
+    "contributors:add": "./node_modules/.bin/all-contributors add",
+    "contributors:generate": "./node_modules/.bin/all-contributors generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/me-io/appium-selenium-starter.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/me-io/appium-selenium-starter/issues"
+  },
+  "homepage": "https://github.com/me-io/appium-selenium-starter#readme",
+  "devDependencies": {
+    "all-contributors-cli": "^4.10.1"
+  }
+}
