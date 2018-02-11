@@ -29,4 +29,4 @@ Make sure each individual commit in your pull request is meaningful. If you had 
 
 ## Follow the existing coding standards
 
-When contributing to open source project it is polite to follow the original authors coding standars. They might be different than yours. It is not a holy war. This project uses **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)**
+When contributing to open source project it is polite to follow the original authors coding standards. They might be different than yours. It is not a holy war. This project uses **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)**
