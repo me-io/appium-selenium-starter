@@ -22,23 +22,23 @@
 
 ## Installation
 
-You can install this `appium-codeception-boilerplate` using the following methods:
+You can install this `appium-selenium-starter` using the following methods:
 
 ### Cloning the repo
 
 Run the following command to configure the boilerplate on your machine:
 
 ```bash
-git clone git@github.com:me-io/appium-codeception-starter.git
+git clone git@github.com:me-io/appium-selenium-starter.git
 ```
 
 ### Via composer create-project
 
-Alternatively, you may also install `appium-codeception-starter` by issuing the Composer create-project command in your 
+Alternatively, you may also install `appium-selenium-starter` by issuing the Composer create-project command in your 
 terminal:
 
 ```bash
-composer create-project --prefer-dist me-io/appium-codeception-starter
+composer create-project --prefer-dist me-io/appium-selenium-starter
 ```
 
 ## Running Example Tests
