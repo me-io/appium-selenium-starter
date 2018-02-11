@@ -43,13 +43,13 @@ composer create-project --prefer-dist me-io/appium-codeception-starter
 
 ## Running Example Tests
 
-You can find the android and ios example tests inside `_example_tests` directory. We also put some example android
-and ios apps inside `_example_tests/_data/test-apps` directory.
+You can find the android and ios example tests inside `/example/tests` directory. We also put some example android
+and ios apps inside `example/tests/_data/test-apps` directory.
 
 ### Android Tests
 
-You need to configure your enviorment for android testing. Just run the following command inside your terminal 
-it will configure your enviorment.
+You need to configure your environment for android testing. Just run the following command inside your terminal 
+it will configure your environment.
 
 ```bash
 ./vendor/bin/appium.sh configure
@@ -57,7 +57,7 @@ it will configure your enviorment.
 
 For running android emulator we are using genymotion. Follow this [guide](https://shankargarg.wordpress.com/2016/02/25/setup-genymotion-android-emulators-on-mac-os/) 
 if you don't know how to install and run android emulator.After setting up android emulator now you need to 
-update the `deviceName` inside `_example_tests/android.suite.yml` file.
+update the `deviceName` inside `example/tests/android.suite.yml` file.
 
 ![Imgur](https://i.imgur.com/znQkuLq.png)
 
@@ -74,7 +74,7 @@ Now inside your terminal run the following command:
 To run the android tests run the following codecept command inside your terminal:
 
 ```bash
-./vendor/bin/codecept -c _example_tests_codeception.yml run android --steps
+./vendor/bin/codecept -c example/codeception.yml run android --steps
 ```
 
 ![Android](https://i.imgur.com/PdqDRFa.gif)
@@ -103,7 +103,7 @@ Now inside your terminal run the following command:
 To run the ios tests run the following codecept command inside your terminal:
 
 ```bash
-./vendor/bin/codecept -c _example_tests_codeception.yml run ios --steps
+./vendor/bin/codecept -c example/codeception.yml run ios --steps
 ```
 
 ![iOS](https://i.imgur.com/Au45fXv.gif)
