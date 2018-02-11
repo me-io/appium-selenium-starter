@@ -131,7 +131,7 @@ The code is available under the [MIT license](LICENSE.md).
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
-[coc]: https://github.com/me-io/selenium-appium-server/blob/master/CODE_OF_CONDUCT.md
+[coc]: https://github.com/me-io/appium-selenium-starter/blob/master/CODE_OF_CONDUCT.md
 [github-watch-badge]: https://img.shields.io/github/watchers/me-io/appium-selenium-starter.svg?style=social
 [github-watch]: https://github.com/me-io/appium-selenium-starter/watchers
 [github-star-badge]: https://img.shields.io/github/stars/me-io/appium-selenium-starter.svg?style=social
