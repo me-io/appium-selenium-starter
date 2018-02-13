@@ -1,4 +1,4 @@
-Hello, and thanks for contributing to <%= name %>!
+Hello, and thanks for contributing to Appium Selenium Starter!
 
 # Description
 
