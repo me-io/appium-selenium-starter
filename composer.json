@@ -20,8 +20,8 @@
     "me-io/appium-codeception": "^1.0"
   },
   "scripts": {
-    "appium": "./vendor/bin/appium.sh",
-    "selenium": "./vendor/bin/selenium.sh"
+    "appium": "./vendor/me-io/selenium-appium-server/bin/appium.sh",
+    "selenium": "./vendor/me-io/selenium-appium-server/bin/selenium.sh"
   },
   "minimum-stability": "dev",
   "prefer-stable": true

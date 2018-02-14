@@ -19,6 +19,8 @@
 ## Requirements
 
 1. PHP >= 7.0
+2. Appium - For Mobile Testing
+3. Selenium - For Web application testing
 
 ## Installation
 
@@ -39,6 +41,39 @@ terminal:
 
 ```bash
 composer create-project --prefer-dist me-io/appium-selenium-starter
+```
+
+## Installing Dependencies
+
+Now run the following command to install required dependencies:
+
+```bash
+composer install
+```
+
+## Configuring Environment
+
+There are two cli applications included in starter. To view a list of all commands in these cli applications inside your terminal run the following commands one by one:
+
+```bash
+composer run appium
+composer run selenium
+```
+
+### Appium
+
+Lets configure your environment for running mobile application testing. Open your terminal and run the following command:
+
+```bash
+composer run appium configure
+```
+
+### Selenium
+
+To configure your environment for running selenium server run the below command:
+
+```bash
+composer run selenium configure
 ```
 
 ## Running Example Tests
