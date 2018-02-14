@@ -1,4 +1,4 @@
-# For saucelabs
+# For Local
 class_name: AndroidGuy
 modules:
   enabled:
@@ -8,8 +8,8 @@ modules:
 
   config:
     \Appium\AppiumDriver:
-      host: 'eu1.appium.testobject.com'
-      port: 80
+      host: 0.0.0.0
+      port: 4723
       dummyRemote: false
       ## before suite / Android / android
       resetAfterSuite: true
@@ -20,13 +20,10 @@ modules:
       ## before every step
       resetAfterStep: false
       capabilities:
-        testobject_api_key: '4A6891ACD38E4BF5905956B6506FB21C'
         platformName: 'Android'
-        platformVersion: '8.1'
-        deviceName: 'LG Nexus 5X Free'
-        phoneOnly: false
-        tabletOnly: false
-        privateDevicesOnly: false
+        deviceName: 'Nexus'
+        automationName: 'Appium'
+        appPackage: io.selendroid.testapp
         fullReset: false
         noReset: false
         newCommandTimeout: 7200
@@ -34,4 +31,5 @@ modules:
         connection_timeout: 500
         request_timeout: 500
         autoAcceptAlerts: true
+        appActivity: io.selendroid.testapp.HomeScreenActivity
         skipUnlock: true

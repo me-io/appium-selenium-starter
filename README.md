@@ -94,10 +94,14 @@ mv example/* .
 
 You can find the android and ios example tests inside `/tests` directory. We also put some example apps for android and ios inside `/tests/_data/test-apps` directory.
 
-### Android Tests
+## Android Tests
 
 For running android emulator we are using genymotion. Follow this [guide](https://shankargarg.wordpress.com/2016/02/25/setup-genymotion-android-emulators-on-mac-os/) 
-if you do not know how to install and run android emulator.After setting up android emulator now you need to update the `deviceName` inside `/tests/android.suite.yml` file.
+if you do not know how to install and run android emulator. You also need to install the application that you want to test inside android emulator.
+
+### Update Suite
+
+Now you need to update the `android.suite.yml` you can find this filw inside `tests` directory. And also update the `deviceName` to your android emulator device name. If you have genymotion installed you can find the device name from the devices list.
 
 ![Imgur](https://i.imgur.com/znQkuLq.png)
 
@@ -113,14 +117,15 @@ To run the android tests run the following codecept command inside your terminal
 
 > **Note:** Make sure appium server is running before running the android tests.
 
-### iOS Tests
+## iOS Tests
 
-Just like we did earlier first we need to configure our machine before running iOS tests. To configure your 
-machine just run the following command inside your terminal and you are ready to go:
+First you need to run the appium server than you need to start the iOS simulator. Use the following if you do not know how to run iOS sumulator http://www.macinstruct.com/node/494.
 
-```bash
-./vendor/bin/appium.sh configure
-```
+### Update Suite
+
+Now you need to update the `ios.suite.yml` you can find this file inside `tests` directory. Open `ios.suite.yml` file and update `xcodeOrgId` and `udid` to your running simulator `identifier` string. You can find your `identifier` string by opening the simulator then `Hardware > Device > Manage Devices > Simulators`. You will find a list of iOS devices now open the device that you are running and after clicking on the device name you will find the `identifier` string.
+
+![](https://dr5mo5s7lqrtc.cloudfront.net/items/052N1f2U0R3r161C2A32/%5B78ae106f1ef8f1f71bcdefd4dbc5e221%5D_Image+2018-02-14+at+6.18.02+PM.png?X-CloudApp-Visitor-Id=2960388&v=029ae989)
 
 ### Running Tests
 
