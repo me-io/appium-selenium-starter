@@ -78,31 +78,28 @@ composer run selenium configure
 
 ## Running Example Tests
 
-You can find the android and ios example tests inside `/example/tests` directory. We also put some example android
-and ios apps inside `example/tests/_data/test-apps` directory.
+> **Note:** For running example tests you need to have installed and configured the android emulator or iOS simulator on your machine.
+
+Before running the mobile tests we need to start the appium server. To start appium server run the following command inside your terminal:
+
+```bash
+composer run appium start
+```
+
+We need to move everything from `example` directory to the root folder of the project. Run the following command inside your terminal:
+
+```bash
+mv example/* .
+```
+
+You can find the android and ios example tests inside `/tests` directory. We also put some example apps for android and ios inside `/tests/_data/test-apps` directory.
 
 ### Android Tests
 
-You need to configure your environment for android testing. Just run the following command inside your terminal 
-it will configure your environment.
-
-```bash
-./vendor/bin/appium.sh configure
-```
-
 For running android emulator we are using genymotion. Follow this [guide](https://shankargarg.wordpress.com/2016/02/25/setup-genymotion-android-emulators-on-mac-os/) 
-if you don't know how to install and run android emulator.After setting up android emulator now you need to 
-update the `deviceName` inside `example/tests/android.suite.yml` file.
+if you do not know how to install and run android emulator.After setting up android emulator now you need to update the `deviceName` inside `/tests/android.suite.yml` file.
 
 ![Imgur](https://i.imgur.com/znQkuLq.png)
-
-### Staring Appium Server
-
-Now inside your terminal run the following command:
-
-```bash
-./vendor/bin/appium.sh start
-```
 
 ### Running Tests
 
@@ -123,14 +120,6 @@ machine just run the following command inside your terminal and you are ready to
 
 ```bash
 ./vendor/bin/appium.sh configure
-```
-
-### Staring Appium Server
-
-Now inside your terminal run the following command:
-
-```bash
-./vendor/bin/appium.sh start
 ```
 
 ### Running Tests
