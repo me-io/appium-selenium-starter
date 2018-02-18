@@ -151,8 +151,8 @@ A huge thanks to all of our contributors:
 
 The code is available under the [MIT license](LICENSE.md).
 
-[build-badge]: https://img.shields.io/travis/me-io/appium-selenium-starter.svg?style=flat-square
-[build]: https://travis-ci.org/me-io/appium-selenium-starter
+[build-badge]: https://img.shields.io/travis/me-io/appium-driver-codeception.svg?style=flat-square
+[build]: https://travis-ci.org/me-io/appium-driver-codeception
 [downloads-badge]: https://img.shields.io/packagist/dm/me-io/appium-selenium-starter.svg?style=flat-square
 [downloads]: https://packagist.org/packages/me-io/appium-selenium-starter/stats
 [license-badge]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
