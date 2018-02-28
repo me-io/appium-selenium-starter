@@ -8,6 +8,7 @@
 [![Build Status][build-badge]][build]
 [![downloads][downloads-badge]][downloads]
 [![MIT License][license-badge]][license]
+[![Donate][donate-badge]][donate]
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs] 
@@ -167,3 +168,5 @@ The code is available under the [MIT license](LICENSE.md).
 [github-star]: https://github.com/me-io/appium-selenium-starter/stargazers
 [twitter]: https://twitter.com/intent/tweet?text=Check%20out%20appium-selenium-starter!%20https://github.com/me-io/appium-selenium-starter%20%F0%9F%91%8D
 [twitter-badge]: https://img.shields.io/twitter/url/https/github.com/me-io/appium-selenium-starter.svg?style=social
+[donate-badge]: https://img.shields.io/badge/paypal-donate-179BD7.svg?style=flat-squares 
+[donate]: https://www.paypal.me/meabed
